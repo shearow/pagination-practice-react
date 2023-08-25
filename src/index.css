@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+/*** Utilities  ***/
+.container {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/***  ***/

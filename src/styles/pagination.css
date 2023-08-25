@@ -1,0 +1,53 @@
+.pag-list-container {
+    background-color: lightgreen;
+    padding: 2rem 0;
+}
+.pag-list ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.pagination-number {
+    padding: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transform: color .3s ease, text-shadow .3s ease;
+}
+.pagination-number:hover {
+    color: coral;
+    text-shadow: 0 0 .5rem #ffffff;
+}
+.pagination-number.active {
+    border-bottom: .2rem solid orangered;
+    transform: scale(1.4);
+}
+.container-pagination-hands {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-pagination-hands span {
+    font-size: 3rem;
+    cursor: pointer;
+}
+.container-pagination-hands span:hover {
+    animation: animationHand .5s;
+}
+@keyframes animationHand {
+    0% {
+        transform: translateX(-.5rem);
+    } 25% {
+        transform: translateX(.5rem);
+    } 50% {
+        transform: translateX(-.6rem);
+    } 75% {
+        transform: translateX(-.2rem);
+    } 100% {
+        transform: translateX(0);
+    }
+
+}
