@@ -3,11 +3,12 @@ import { Spinner } from "./Spinner"
 import { useFetch } from "../hooks/useFetch"
 import { Pagination } from "./Pagination"
 
+const POKEMONS_IN_PAGE = 8;
+let pokeCardsInPage = [];
+
 export const CardsPokemon = () => {
     const [actualPage, setActualPage] = useState(1);
     const {loading, errors, dataFetch} = useFetch({endPoint:`pokemon?limit=100&offset=0`});
-    const POKEMONS_IN_PAGE = 8;
-    let pokeCardsInPage = [];
     
     const cantPages = () => {
         if(dataFetch) return Math.ceil(dataFetch?.results.length / POKEMONS_IN_PAGE);
